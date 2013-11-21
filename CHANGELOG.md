@@ -1,3 +1,7 @@
+## 2.0.0
+* Notice (and raise on) empty zookeeper quorum
+* Always use self as nimbus server if nimbus role is set locally
+
 ## 1.2.6
 * Cleaned up food critic warnings
 * Made default version 0.8.2
@@ -12,7 +16,7 @@
 * Changed default ZooKeeper Settings
 
 ## 1.2.2
-* Removed deploy_build block entirely 
+* Removed deploy_build block entirely
 * Changed remote_file to use :create_if_missing
 
 ## 1.2.1
