@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: storm
-# Recipe:: default
+# Recipe:: nimbus
 #
 # Copyright 2012, Webtrends, Inc.
 #

@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: storm
-# Recipe:: default
+# Recipe:: supervisor
 #
 # Copyright 2012, Webtrends, Inc.
 #
