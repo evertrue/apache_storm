@@ -9,6 +9,8 @@ JAVA_HOME="<%=@java_home%>"
 if [ -r /etc/environment ]; then
   source /etc/environment
 fi
+export VAULT_ADDR
+export VAULT_TOKEN
 
 CMD="$HOME_DIR/bin/storm supervisor"
 
