@@ -7,7 +7,7 @@
   ],
   "automatic": {
     "fqdn": "dev-storm-nimbus-1b.priv.evertrue.com",
-    "ipaddress": "192.168.33.11",
+    "ipaddress": "127.0.0.1",
     "recipes": [
       "apache_storm::nimbus"
     ],
