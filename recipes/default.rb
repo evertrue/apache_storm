@@ -83,7 +83,7 @@ user 'storm' do
   gid 'storm'
   shell '/bin/bash'
   home '/home/storm'
-  supports manage_home: true
+  manage_home true
 end
 
 # storm looks for storm.yaml in ~/.storm/storm.yaml so make a link
