@@ -4,7 +4,6 @@ driver:
   aws_access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
   aws_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
   aws_ssh_key_id: <%= ENV['AWS_KEYPAIR_NAME'] %>
-  ssh_key: <%= ENV['EC2_SSH_KEY_PATH'] %>
   region: us-east-1
   availability_zone: us-east-1b
   security_group_ids: ['ci-testing']
@@ -12,12 +11,20 @@ driver:
   flavor_id: c3.large
   interface: public
 
+transport:
+  name: sftp
+  ssh_key: <%= ENV['EC2_SSH_KEY_PATH'] %>
+
+provisioner:
+  name: chef_zero
+  client_rb:
+    environment: dev
+
 platforms:
 - name: ubuntu-14.04
   driver_config:
-    image_id: ami-44e9752c
     tags:
-      Name: apache_storm-travis-default-ubuntu-1204
+      Name: apache-storm-default-ubuntu-1404
       Env: public
 
 suites:
