@@ -7,7 +7,7 @@ HOME_DIR="<%=@install_dir%>"
 JAVA_HOME="<%=@java_home%>"
 
 if [ -r /etc/environment ]; then
-  source /etc/environment
+  . /etc/environment
 fi
 export VAULT_ADDR VAULT_TOKEN
 
