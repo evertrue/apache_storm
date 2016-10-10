@@ -1,5 +1,10 @@
 # apache_storm CHANGELOG
 
+## v4.1.0
+
+* Pass Vault environment variables to Storm
+* Update Storm user create code for Chef 12.14
+
 ## v4.0.2
 
 * Update download URL
