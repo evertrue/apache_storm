@@ -1,5 +1,9 @@
 # apache_storm CHANGELOG
 
+## v4.1.1
+
+* Update Storm download URL
+
 ## v4.1.0
 
 * Pass Vault environment variables to Storm
